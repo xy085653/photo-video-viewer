@@ -1,0 +1,164 @@
+
+/* ==================== 全局暗色 + 橙色主题 ==================== */
+QMainWindow, QSplitter, QWidget {
+    background: #121212;
+    color: #f0f0f0;
+}
+
+QToolTip {
+    color: #f0f0f0;
+    background: #333;
+    border: 1px solid #555;
+    padding: 4px;
+}
+
+QFrame#toolbar_frame {
+    background: #1e1e1e;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+QPushButton {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 6px 12px;
+    color: #f0f0f0;
+    font-size: 13px;
+}
+
+QPushButton:hover {
+    border: 1px solid #ff9800;
+}
+
+QPushButton:pressed {
+    border: 1px solid #f57c00;
+}
+
+/* 缩略图列表 */
+QListView {
+    background: #1e1e1e;
+    border: none;
+    padding: 12px;
+}
+
+QListView::item {
+    border-radius: 8px;
+    padding: 4px;
+}
+
+QListView::item:selected {
+    background: #ff9800;
+    color: #121212;
+}
+
+QTreeView {
+    background: #1e1e1e;
+    border: none;
+    outline: none;
+}
+
+QTreeView::item:selected {
+    background: #ff9800;
+    color: #121212;
+}
+
+/* 分割条 */
+QSplitter::handle:horizontal {
+    background: #444;
+    width: 4px;
+}
+
+QSplitter::handle:horizontal:hover {
+    background: #ff9800;
+}
+
+/* 预览区 */
+QLabel#preview_label {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+}
+
+/* 状态栏 */
+QStatusBar {
+    background: #1e1e1e;
+    color: #aaa;
+}
+
+/* 右键菜单 */
+QMenu {
+    background: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 4px 0;
+    color: #f0f0f0;
+}
+
+QMenu::item {
+    padding: 6px 32px 6px 20px;
+    border-radius: 2px;
+}
+
+QMenu::item:selected {
+    background: #ff9800;
+    color: #121212;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: #444;
+    margin: 4px 8px;
+}
+
+/* 滚动条美化（垂直） */
+QScrollBar:vertical {
+    background: #2a2a2a;
+    width: 10px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background: #ff9800;
+    border-radius: 5px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #f57c00;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+/* 滚动条美化（水平） */
+QScrollBar:horizontal {
+    background: #2a2a2a;
+    height: 1px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #ff9800;
+    border-radius: 0px;
+    min-width: 30px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #f57c00;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: none;
+}
